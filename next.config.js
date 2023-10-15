@@ -10,9 +10,7 @@ const nextConfig = {
         permanent: true,
       },
     ];
-  },
-  
-  basePath: '/manatime-dashboard',
+  }
 };
 
 module.exports = nextConfig;
