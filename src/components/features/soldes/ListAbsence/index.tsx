@@ -41,6 +41,7 @@ const ListAbsence = () => {
         <TableBody>
           {list_soldes.map((item: any) => (
             <TableRow
+              key={item.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell>

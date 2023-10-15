@@ -91,8 +91,10 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
                 setName(event.target.value)
               }
             >
-              {list_users.map((name) => (
-                <MenuItem value={name}>{name}</MenuItem>
+              {list_users.map((name, index) => (
+                <MenuItem key={index} value={name}>
+                  {name}
+                </MenuItem>
               ))}
             </Select>
           </FormControl>

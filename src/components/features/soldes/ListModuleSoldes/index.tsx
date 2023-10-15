@@ -39,8 +39,8 @@ const ListModuleSoldes = ({
           <Image width={300} height={300} alt="logo" src={"/images/Logo.svg"} />
         </Box>
         <Box sx={{ display: "flex", flexWrap: "wrap", flexDirection: "row" }}>
-          {list_module_soldes.map(({ name, iconName }) => (
-            <Card name={name} iconName={iconName} />
+          {list_module_soldes.map(({ name, iconName }, index) => (
+            <Card key={index} name={name} iconName={iconName} />
           ))}
         </Box>
       </Box>
