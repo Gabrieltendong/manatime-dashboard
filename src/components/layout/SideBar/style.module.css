@@ -1,0 +1,29 @@
+.wrapper{ position: fixed; height: 100vh; width: inherit }
+.container {
+    background: linear-gradient(#094694, #0281E3);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-position: bottom;
+    position: absolute;
+    background-image: url("/images/Graphic.svg");
+    background-size: 200px 300px ;
+    background-repeat: no-repeat;
+}
+
+.menu_burger_wrapper {
+    height: 66px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
