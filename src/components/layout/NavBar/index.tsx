@@ -83,10 +83,10 @@ const NavBar = () => {
         </Grid>
         <Grid item>
           <Badge
-            color="secondary"
             overlap="circular"
             badgeContent=" "
             variant="dot"
+            sx={{ color: "green" }}
           >
             <Avatar alt="Remy Sharp" src="/images/Photo.png" />
           </Badge>
