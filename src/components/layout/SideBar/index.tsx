@@ -25,7 +25,7 @@ const SideBar = () => {
             height={30}
             width={30}
             alt="burger menu"
-            src={"/images/Burger_button.svg"}
+            src={"images/Burger_button.svg"}
           />
         </div>
         <Button text="Accueil" iconName="Accueil" />

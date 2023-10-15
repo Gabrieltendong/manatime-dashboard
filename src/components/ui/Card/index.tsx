@@ -27,7 +27,7 @@ const Card = ({ name, iconName }: CardProps) => {
         width={100}
         height={100}
         alt={`${iconName}`}
-        src={`/images/${iconName}.svg`}
+        src={`images/${iconName}.svg`}
       />
       <Typography fontFamily={"Poppins"} mt={2}>
         {name}

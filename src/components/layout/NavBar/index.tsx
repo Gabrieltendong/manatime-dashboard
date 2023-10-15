@@ -14,7 +14,7 @@ const NavBar = () => {
             alt="Remy Sharp"
             width={40}
             height={40}
-            src="/images/Absence_Icon.svg"
+            src="images/Absence_Icon.svg"
           />
         </Grid>
         <Grid item ml={4}>
@@ -27,7 +27,7 @@ const NavBar = () => {
             alt="Remy Sharp"
             width={20}
             height={20}
-            src="/images/stripe2.svg"
+            src="images/stripe2.svg"
           />
         </Grid>
         <Grid item ml={3}>
@@ -41,7 +41,7 @@ const NavBar = () => {
             alt="Remy Sharp"
             width={20}
             height={20}
-            src="/images/stripe2.svg"
+            src="images/stripe2.svg"
           />
         </Grid>
         <Grid item ml={3}>
@@ -57,14 +57,14 @@ const NavBar = () => {
         alignItems="center"
       >
         <Grid item>
-          <Image width={40} height={40} alt="image" src={"/images/Help.svg"} />
+          <Image width={40} height={40} alt="image" src={"images/Help.svg"} />
         </Grid>
         <Grid item marginLeft={1}>
           <Image
             width={40}
             height={40}
             alt="image"
-            src={"/images/Settings.svg"}
+            src={"images/Settings.svg"}
           />
         </Grid>
         <Grid item marginLeft={3}>
@@ -88,7 +88,7 @@ const NavBar = () => {
             variant="dot"
             sx={{ color: "green" }}
           >
-            <Avatar alt="Remy Sharp" src="/images/Photo.png" />
+            <Avatar alt="Remy Sharp" src="images/Photo.png" />
           </Badge>
         </Grid>
       </Grid>

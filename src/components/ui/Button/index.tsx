@@ -27,7 +27,7 @@ const Button = ({ text, iconName }: ButtonProps) => {
         width={20}
         height={20}
         alt={`${iconName}`}
-        src={`/images/${iconName}.svg`}
+        src={`images/${iconName}.svg`}
       />
       <Typography ml={3} fontFamily={"Poppins"} color={"white"} fontSize={18}>
         {text}

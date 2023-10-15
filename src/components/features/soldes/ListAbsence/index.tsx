@@ -70,7 +70,7 @@ const ListAbsence = () => {
                         width={40}
                         height={40}
                         alt=""
-                        src={"/images/Ajuster.svg"}
+                        src={"images/Ajuster.svg"}
                       />
                     </Box>
                   </Grid>
@@ -80,7 +80,7 @@ const ListAbsence = () => {
                         width={40}
                         height={40}
                         alt=""
-                        src={"/images/Transferer.svg"}
+                        src={"images/Transferer.svg"}
                       />
                     </Box>
                   </Grid>
@@ -90,7 +90,7 @@ const ListAbsence = () => {
                         width={40}
                         height={40}
                         alt=""
-                        src={"/images/Solder.svg"}
+                        src={"images/Solder.svg"}
                       />
                     </Box>
                   </Grid>
