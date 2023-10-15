@@ -11,6 +11,7 @@ const nextConfig = {
       },
     ];
   },
+  basePath: '/manatime-dashboard',
 };
 
 module.exports = nextConfig;
