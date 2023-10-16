@@ -45,30 +45,30 @@ const ListAbsence = () => {
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell>
-                <Typography>{item.user_name}</Typography>
+                <Typography variant="caption">{item.user_name}</Typography>
               </TableCell>
               <TableCell>
-                <Typography>{item.category}</Typography>
+                <Typography variant="caption">{item.category}</Typography>
               </TableCell>
               <TableCell>
-                <Typography>{item.periode}</Typography>
+                <Typography variant="caption">{item.periode}</Typography>
               </TableCell>
               <TableCell>
-                <Typography>{item.solde_actuel}</Typography>
+                <Typography variant="caption">{item.solde_actuel}</Typography>
               </TableCell>
               <TableCell>
-                <Typography>{item.solde_pris}</Typography>
+                <Typography variant="caption">{item.solde_pris}</Typography>
               </TableCell>
               <TableCell>
-                <Typography>{item.solde_futur}</Typography>
+                <Typography variant="caption">{item.solde_futur}</Typography>
               </TableCell>
               <TableCell>
                 <Grid container>
                   <Grid item mr={3}>
                     <Box>
                       <Image
-                        width={40}
-                        height={40}
+                        width={30}
+                        height={30}
                         alt=""
                         src={"images/Ajuster.svg"}
                       />
@@ -77,8 +77,8 @@ const ListAbsence = () => {
                   <Grid item mr={3}>
                     <Box>
                       <Image
-                        width={40}
-                        height={40}
+                        width={30}
+                        height={30}
                         alt=""
                         src={"images/Transferer.svg"}
                       />
@@ -87,8 +87,8 @@ const ListAbsence = () => {
                   <Grid item>
                     <Box onClick={() => handleRemoveSolde(item.id)}>
                       <Image
-                        width={40}
-                        height={40}
+                        width={30}
+                        height={30}
                         alt=""
                         src={"images/Solder.svg"}
                       />

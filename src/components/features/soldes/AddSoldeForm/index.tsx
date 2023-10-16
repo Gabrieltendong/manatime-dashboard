@@ -100,7 +100,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
           </FormControl>
           {errors.user_name && (
             <Typography variant="caption" color={"red"}>
-              This field is required
+              Ce champ est obligatoire
             </Typography>
           )}
           <FormControl
@@ -121,7 +121,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
           </FormControl>
           {errors.category && (
             <Typography variant="caption" color={"red"}>
-              This field is required
+              Ce champ est obligatoire
             </Typography>
           )}
           <FormControl
@@ -143,7 +143,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
           </FormControl>
           {errors.periode && (
             <Typography variant="caption" color={"red"}>
-              This field is required
+              Ce champ est obligatoire
             </Typography>
           )}
           <Grid container>
@@ -167,7 +167,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
               </FormControl>
               {errors.solde_actuel && (
                 <Typography variant="caption" color={"red"}>
-                  This field is required
+                  Ce champ est obligatoire
                 </Typography>
               )}
             </Grid>
@@ -191,7 +191,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
               </FormControl>
               {errors.solde_pris && (
                 <Typography variant="caption" color={"red"}>
-                  This field is required
+                  Ce champ est obligatoire
                 </Typography>
               )}
             </Grid>
@@ -215,7 +215,7 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
               </FormControl>
               {errors.solde_futur && (
                 <Typography variant="caption" color={"red"}>
-                  This field is required
+                  Ce champ est obligatoire
                 </Typography>
               )}
             </Grid>

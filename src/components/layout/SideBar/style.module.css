@@ -1,4 +1,4 @@
-.wrapper{ position: fixed; height: 100vh; width: inherit }
+.wrapper{ position: fixed; height: 100vh; width: inherit; z-index: 100; }
 .container {
     background: linear-gradient(#094694, #0281E3);
     height: 100%;

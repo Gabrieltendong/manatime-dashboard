@@ -12,6 +12,9 @@ export const theme = createTheme({
     secondary: {
       main: appColors.secondary,
     },
+    success: {
+      main: appColors.success,
+    },
   },
   typography: {
     fontFamily: ["Poppins", "Roboto"].join(","),
