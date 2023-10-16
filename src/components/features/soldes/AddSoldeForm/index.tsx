@@ -28,6 +28,7 @@ const style = {
   borderRadius: 3,
   boxShadow: 24,
   p: 4,
+  overflow: "scroll"
 };
 
 type AddSoldeFormProps = {
@@ -146,11 +147,10 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
               Ce champ est obligatoire
             </Typography>
           )}
-          <Grid container>
+          <Grid container spacing={3} mt={3}>
             <Grid item>
               <FormControl
                 fullWidth
-                sx={{ mt: 3 }}
                 {...register("solde_actuel", { required: true })}
               >
                 <Typography>Solde actuel</Typography>
@@ -171,10 +171,9 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
                 </Typography>
               )}
             </Grid>
-            <Grid item ml={3}>
+            <Grid item >
               <FormControl
                 fullWidth
-                sx={{ mt: 3 }}
                 {...register("solde_pris", { required: true })}
               >
                 <Typography>Solde pris</Typography>
@@ -195,10 +194,9 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
                 </Typography>
               )}
             </Grid>
-            <Grid item ml={3}>
+            <Grid item >
               <FormControl
                 fullWidth
-                sx={{ mt: 3 }}
                 {...register("solde_futur", { required: true })}
               >
                 <Typography>Solde futur</Typography>
@@ -220,13 +218,13 @@ const AddSoldeForm = ({ isOpen, handleClose }: AddSoldeFormProps) => {
               )}
             </Grid>
           </Grid>
-          <Grid container mt={4}>
+          <Grid container mt={4} spacing={3}>
             <Grid item>
               <Button variant="outlined" onClick={handleClose}>
                 Annuler
               </Button>
             </Grid>
-            <Grid item ml={3}>
+            <Grid item >
               <Button variant="contained" type="submit">
                 Ajouter
               </Button>
