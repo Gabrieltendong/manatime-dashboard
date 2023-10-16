@@ -1,4 +1,4 @@
-import { Avatar, Badge, Grid, Typography } from "@mui/material";
+import { Avatar, Badge, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import { Balance } from "@mui/icons-material";
@@ -6,6 +6,7 @@ import { Balance } from "@mui/icons-material";
 import styles from "./style.module.css";
 
 const NavBar = () => {
+  const isMobile = useMediaQuery((theme: any) => theme.breakpoints.down("md"));
   return (
     <Grid container className={styles.container}>
       <Grid xs={8} item container direction="row" alignItems="center">
@@ -48,50 +49,52 @@ const NavBar = () => {
           <Typography fontFamily={"Poppins"}>Sous sous module</Typography>
         </Grid>
       </Grid>
-      <Grid
-        item
-        xs
-        container
-        direction="row"
-        justifyContent="flex-end"
-        alignItems="center"
-      >
-        <Grid item>
-          <Image width={40} height={40} alt="image" src={"images/Help.svg"} />
+      {!isMobile && (
+        <Grid
+          item
+          xs
+          container
+          direction="row"
+          justifyContent="flex-end"
+          alignItems="center"
+        >
+          <Grid item>
+            <Image width={40} height={40} alt="image" src={"images/Help.svg"} />
+          </Grid>
+          <Grid item marginLeft={1}>
+            <Image
+              width={40}
+              height={40}
+              alt="image"
+              src={"images/Settings.svg"}
+            />
+          </Grid>
+          <Grid item marginLeft={3}>
+            <div className={styles.divider} />
+          </Grid>
+          <Grid item sx={{ marginX: 3 }}>
+            <Typography fontFamily={"Poppins"}>Nom et prénom</Typography>
+            <Typography
+              textAlign={"center"}
+              sx={{ color: "#494949" }}
+              fontFamily={"Poppins"}
+              fontSize={12}
+            >
+              Entreprise
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Badge
+              color="success"
+              overlap="circular"
+              badgeContent=" "
+              variant="dot"
+            >
+              <Avatar alt="Remy Sharp" src="images/Photo.png" />
+            </Badge>
+          </Grid>
         </Grid>
-        <Grid item marginLeft={1}>
-          <Image
-            width={40}
-            height={40}
-            alt="image"
-            src={"images/Settings.svg"}
-          />
-        </Grid>
-        <Grid item marginLeft={3}>
-          <div className={styles.divider} />
-        </Grid>
-        <Grid item sx={{ marginX: 3 }}>
-          <Typography fontFamily={"Poppins"}>Nom et prénom</Typography>
-          <Typography
-            textAlign={"center"}
-            sx={{ color: "#494949" }}
-            fontFamily={"Poppins"}
-            fontSize={12}
-          >
-            Entreprise
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Badge
-            color="success"
-            overlap="circular"
-            badgeContent=" "
-            variant="dot"
-          >
-            <Avatar alt="Remy Sharp" src="images/Photo.png" />
-          </Badge>
-        </Grid>
-      </Grid>
+      )}
     </Grid>
   );
 };
