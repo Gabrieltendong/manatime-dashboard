@@ -19,7 +19,7 @@ const NavBar = () => {
           />
         </Grid>
         <Grid item ml={4}>
-          <Typography variant="h5" fontFamily={"Poppins"}>
+          <Typography variant="h6" fontFamily={"Poppins"}>
             Absence
           </Typography>
         </Grid>
@@ -35,7 +35,7 @@ const NavBar = () => {
           <Balance sx={{ color: "#858585" }} />
         </Grid>
         <Grid item ml={3}>
-          <Typography fontFamily={"Poppins"}>Sous module</Typography>
+          <Typography variant="caption" fontFamily={"Poppins"}>Sous module</Typography>
         </Grid>
         <Grid item ml={3}>
           <Image
@@ -46,7 +46,7 @@ const NavBar = () => {
           />
         </Grid>
         <Grid item ml={3}>
-          <Typography fontFamily={"Poppins"}>Sous sous module</Typography>
+          <Typography variant="caption" fontFamily={"Poppins"}>Sous sous module</Typography>
         </Grid>
       </Grid>
       {!isMobile && (

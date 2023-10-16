@@ -1,8 +1,9 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 const Divider = () => {
   return (
-    <div style={{ height: 2, width: "100%", backgroundColor: "#0569C2" }} />
+    <Box sx={{ height: "2px", width: "100%", bgcolor: "#0569C2", zIndex: 1, position: 'relative' }} />
   );
 };
 

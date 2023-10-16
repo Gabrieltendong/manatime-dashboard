@@ -29,7 +29,7 @@ const Button = ({ text, iconName }: ButtonProps) => {
         alt={`${iconName}`}
         src={`images/${iconName}.svg`}
       />
-      <Typography ml={3} fontFamily={"Poppins"} color={"white"} fontSize={18}>
+      <Typography ml={3} fontFamily={"Poppins"} color={"white"} fontSize={14}>
         {text}
       </Typography>
     </Box>

@@ -18,7 +18,7 @@ const SideBar = () => {
     };
 
   return (
-    <Grid item sx={{ position: "fixed", height: "100%", zIndex: 1 }}>
+    <Grid item sx={{ position: "fixed", height: "100%", zIndex: 1, overflowY: 'scroll' }}>
       <div className={styles.container}>
         <div className={styles.menu_burger_wrapper}>
           <Image

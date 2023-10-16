@@ -60,7 +60,7 @@ const MenuItem = ({
             ml={3}
             fontFamily={"Poppins"}
             color={expanded === panel ? appColors.primary : "white"}
-            fontSize={18}
+            fontSize={14}
           >
             {text}
           </Typography>

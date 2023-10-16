@@ -36,11 +36,11 @@ const ListModuleSoldes = ({
           horizontal: "left",
         }}
       >
-        <Box sx={{ height: "100vh", bgcolor: "#fff", width: "40vw", p: 4 }}>
+        <Box sx={{ height: "100vh", bgcolor: "#fff", minWidth: '20vw', width: "50vw", p: 4 }}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Image
               width={300}
-              height={300}
+              height={200}
               alt="logo"
               src={"images/Logo.svg"}
             />
